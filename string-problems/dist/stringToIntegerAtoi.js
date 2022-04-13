@@ -82,7 +82,7 @@ function myAtoi(input) {
     // Traverse next digits of input and stop if it is not a digit. 
     // End of string is also non-digit character.
     while (index < n && input[index] >= '0' && input[index] <= '9') {
-        let digit = input[index] - '0';
+        let digit = input[index];
         // Check overflow and underflow conditions. 
         if ((result > Math.floor(INT_MAX / 10)) ||
             (result == Math.floor(INT_MAX / 10) && digit > INT_MAX % 10)) {

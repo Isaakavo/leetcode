@@ -26,7 +26,7 @@ Constraints:
 s consists only of printable ASCII characters.
 
 */
-function isPalindrome(s) {
+function validPalindrome(s) {
     let replacedString = s.toLowerCase().replace(/[^a-z0-9]/gi, '');
     let backPointer = replacedString.length - 1;
     for (let i = 0; i < replacedString.length; i++) {
@@ -37,8 +37,8 @@ function isPalindrome(s) {
     }
     return true;
 }
-console.log(isPalindrome('A man, a plan, a canal: Panama'));
-console.log(isPalindrome('race a car'));
-console.log(isPalindrome(' '));
-console.log(isPalindrome('Dogma I am God'));
-console.log(isPalindrome('Dogma I am'));
+console.log(validPalindrome('A man, a plan, a canal: Panama'));
+console.log(validPalindrome('race a car'));
+console.log(validPalindrome(' '));
+console.log(validPalindrome('Dogma I am God'));
+console.log(validPalindrome('Dogma I am'));
