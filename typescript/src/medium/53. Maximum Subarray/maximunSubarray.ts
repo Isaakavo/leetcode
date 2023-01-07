@@ -48,9 +48,9 @@ var maxSubArray = function (nums) {
 
 // const nums = [-2,1,-3,4,-1,2,1,-5,4];
 // const nums = [1];
-const nums = [1, -2, -2, -1];
+const numsForTesting = [1, -2, -2, -1];
 // const nums = [-1,-1,-2,-2];
 console.time('init');
-console.log(maxSubArray(nums));
+console.log(maxSubArray(numsForTesting));
 console.timeEnd('init');
 console.log('finish');
