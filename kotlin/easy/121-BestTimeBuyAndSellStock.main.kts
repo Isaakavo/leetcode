@@ -4,13 +4,11 @@
 //
 //Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
-
 fun maxProfit(prices: IntArray): Int {
 	var bestPrice = prices[0]
 	var profit = 0
 
-	for (i in 0..prices.size - 1) {
-		val currentPrice = prices[i]
+	for (currentPrice in prices) {
 
 		if (currentPrice < bestPrice) {
 			bestPrice = currentPrice
@@ -26,5 +24,5 @@ fun maxProfit(prices: IntArray): Int {
 
 val prices = intArrayOf(7,6,4,3,1)
 
-println(maxProfit(prices))
+println(maxProfit(prices) == 0)
 
